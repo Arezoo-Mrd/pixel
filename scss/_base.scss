@@ -1,0 +1,9 @@
+@mixin abs-position{
+    position: absolute;
+    top:50%;
+    right:0
+}
+
+body{
+    direction: rtl;
+}

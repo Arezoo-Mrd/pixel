@@ -1,0 +1,26 @@
+.submite-request{
+    position: relative;
+    img{
+        border-radius: 12px;
+        height:45vh;
+        object-fit: cover
+    }
+    .submit-text{
+        @include abs-position();
+        display: flex;
+        align-items: center;
+    }
+}
+.list-request{
+    position: relative;
+    img{
+        border-radius: 12px;
+        height:45vh;
+        object-fit: cover
+    }
+    .list-text{
+        @include abs-position();
+        display: flex;
+        align-items: center;
+    }
+}

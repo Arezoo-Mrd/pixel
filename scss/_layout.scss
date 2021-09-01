@@ -25,13 +25,13 @@
     }
 }
 .list-request input{
-    border-radius: $ronded;
+    border-radius: $rounded;
 }
 .photographer-list{
-    border-radius: $ronded;
+    border-radius: $rounded;
 }
 .filter-box{
-    border-radius: $ronded;
+    border-radius: $rounded;
     a{
         border-radius: 14px;
         border: 1px solid #ccc;
@@ -43,5 +43,21 @@
         background: $color-primary;
         color: $color-white;
 
+    }
+}
+.photographer-box{
+    img{
+        width: 90%;
+    }
+    .resome-box {
+       @include border-box;
+       border-radius: $rounded;
+       padding: 25px;
+       margin-top: 64px;
+
+    }
+    button{
+        border-radius: $rounded;
+    
     }
 }

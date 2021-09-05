@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <title>ثبت درخواست</title>
+</head>
+<body>
+    <div class="col-12 d-flex  justify-content-center wrapper">
+        <div
+            class="col-8 d-flex flex-column align-items-center justify-content-center last-information-photographer animate__animated animate__bounceInUp">
+            <div class="photographer-img">
+                <img src="./images/men.png" alt="">
+            </div>
+            <div class="d-flex flex-column align-items-center mt-5">
+            <label for="single-select-date">زمان</label>
+            <div mbsc-page class="demo-single-select">
+                <input id="single-select-date" mbsc-input data-input-style="box" data-label-style="stacked"
+                    placeholder="چه تاریخی؟" id="time" />
+            </div>
+            <label for="selectTime" class="mt-2"> ساعت رزرو</label>
+            <div class="mbsc-col-sm-12 mbsc-col-md-6">
+                <label>
+                    <select mbsc-dropdown id="selectTime" data-input-style="box">
+                        <option value="morning">صبح</option>
+                        <option value="Noon">ظهر</option>
+                        <option value="fullTime">تمام وقت</option>
+
+                    </select>
+                </label>
+            </div>
+            <button class="btn text-white mt-5">ثبت درخواست</button>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mobiscroll.jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+        mobiscroll.setOptions({
+            locale: mobiscroll.localeFa,
+            theme: 'ios',
+            themeVariant: 'light',
+          
+        });
+
+        $(function () {
+
+            $('#single-select-date').mobiscroll().datepicker({
+                controls: ['calendar'],
+                selectMultiple: false
+            });
+            $('#selectTime').mobiscroll().select({
+            display: 'bubble', 
+            touchUi: true    
+        });
+    
+
+        });
+    </script>
+</body>
+</html>
